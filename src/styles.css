@@ -1,0 +1,101 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Create a container to split the screen */
+.container {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the sidebar (left side) */
+.sidebar {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Keep the sidebar fixed */
+  position: sticky;
+  top: 0;
+  height: 100%; /* Sidebar takes up 100% height of the container */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+/* Style the content (right side) */
+.content {
+  flex: 1;
+  color: #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Allow content to scroll if it overflows */
+  overflow-y: auto;
+}
+
+/* Apply styles to individual sections within the sidebar */
+header {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#about,
+#experience {
+  margin-top: 30px;
+}
+
+/* Style experience entries */
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Style project entries */
+.project {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.2rem;
+}
+
+/* Style project links */
+.project a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
