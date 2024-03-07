@@ -1,0 +1,14 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  background-image: url("images/Background2.webp");
+  background-color: rgb(223, 207, 227);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  padding: 5%;
+}
