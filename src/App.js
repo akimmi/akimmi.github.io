@@ -1,10 +1,10 @@
 import "./style.css";
-import { Grid } from "./components/Grid";
+import { KimmiCard } from "./components/KimmiCard";
 
 function App() {
   return (
     <div className="App">
-      <Grid></Grid>
+      <KimmiCard />
     </div>
   );
 }

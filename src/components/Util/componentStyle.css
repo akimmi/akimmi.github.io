@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "roca-bold";
+  src: url("../../fonts/Roca\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "roca-italic";
+  src: url("../../fonts/Roca\ Light\ Italic.ttf");
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space-between .skills-section {
+  padding-left: 30px;
+  align-self: flex-start;
+}
+
+.space-between .education-section {
+  padding-left: 30px;
+  align-self: flex-start;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "left right"; /* Equal width for both columns */
+  grid-gap: 10px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr; /* Equal width for both columns */
+}
+
+.text {
+  margin: 0;
+  color: #500c46;
+}
+
+.text-bold {
+  margin: 0;
+  color: #500c46;
+  font-family: "roca-bold";
+}
+
+.text-italic {
+  margin: 0;
+  color: #500c46;
+  font-family: "roca-italic";
+}
+
+.text-light {
+  margin: 0;
+  color: #544052;
+}
+
+.text-bold-light {
+  margin: 0;
+  color: #544052;
+  font-family: "roca-bold";
+}
+
+.text-light-xs {
+  margin: 0;
+  padding-left: 30px;
+  color: #544052;
+}
+
+.text-bold-light-xs {
+  margin: 0;
+  padding-left: 30px;
+  color: #544052;
+  font-family: "roca-bold";
+}
