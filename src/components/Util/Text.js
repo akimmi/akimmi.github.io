@@ -12,10 +12,7 @@ export const Text = ({ children, bold, italic, level, light, xs }) => {
     .join("-");
 
   // Define the font size based on the 'level' prop
-  console.log(children)
-  console.log(level)
   const fontSize = xs ? '14px' : level === 0 ? '17px' : `${10 + level * 10}px`;
-  console.log(classNames);
 
   return React.createElement(
     HeadingLevel,

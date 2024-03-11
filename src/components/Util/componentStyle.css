@@ -27,11 +27,21 @@
 }
 
 .grid-container {
+  padding: 15px;
   display: grid;
   grid-template-areas: "left right"; /* Equal width for both columns */
   grid-gap: 10px;
   text-align: center;
   grid-template-columns: 1fr 1fr; /* Equal width for both columns */
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-areas:
+      "left"
+      "right"; /* Switch to a single column for smaller screens */
+    grid-template-columns: 1fr; /* Optional: Adjust the column layout */
+  }
 }
 
 .text {
@@ -58,7 +68,7 @@
 
 .text-bold-light {
   margin: 0;
-  color: #544052;
+  color: #726471;
   font-family: "roca-bold";
 }
 
@@ -73,4 +83,10 @@
   padding-left: 30px;
   color: #544052;
   font-family: "roca-bold";
+}
+
+.vertical-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -12,12 +12,14 @@
 .left-side {
   grid-area: left;
   border-width: 3px;
+  display: grid;
+  justify-items: center;
 }
 
 .portrait {
-  width: 200px; /* Adjust the width as needed */
-  height: 200px; /* Maintain the aspect ratio */
-  border-radius: 50%;
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Maintain the aspect ratio */
+  border-radius: 20%;
   overflow: hidden;
   object-fit: cover;
 }
@@ -35,13 +37,10 @@
 }
 
 .social-button img {
-  width: 6%;
-  height: 6%;
+  width: 30px;
+  height: 30px;
   padding: 0;
-}
-
-.social-button:hover {
-  background-color: rgb(0, 0, 0, 0.3);
+  object-fit: contain; /* or "contain" based on your preference */
 }
 
 .skills-section {
@@ -56,4 +55,17 @@
 .education-section .header {
   padding-left: 60;
   text-align: left;
+}
+
+.company-logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.experience-company-logo {
+  width: 20px;
+  height: 20px;
 }

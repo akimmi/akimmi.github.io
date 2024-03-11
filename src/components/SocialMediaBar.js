@@ -7,7 +7,7 @@ import "./style.css";
 export const SocialMediaBar = () => {
   return (
     <div className="button-group">
-      <Icon img={Gmail} alt="Gmail" link="mailto:akimminavarro@gmail.com" />
+      <Icon img={Gmail} alt="Gmail" link="mailto:akimminav@gmail.com" />
       <Icon
         img={LinkedIn}
         alt="LinkedIn"

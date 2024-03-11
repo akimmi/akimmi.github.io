@@ -7,19 +7,17 @@ export const EducationSection = () => {
       <Text italic level={1}>
         Education
       </Text>
-      <Text bold light>{"‣ University of Southern California"}</Text>
+      <Text bold light>
+        {"‣ University of Southern California | Aug 2022 - May 2024"}
+      </Text>
       <Text light xs>
         Master of Science - MS, Electrical Engineering
       </Text>
-      <Text light xs>
-        Aug 2022 - May 2024
+      <Text bold light>
+        {"‣ California Polytechnic State University | Sep 2018 - Jun 2022"}
       </Text>
-      <Text bold light>{"‣ California Polytechnic State University"}</Text>
-      <Text bold light xs>
+      <Text light xs>
         Bachelor of Science - BS, Elecrtical Engineering
-      </Text>
-      <Text light xs>
-        Sep 2018 - Jun 2022
       </Text>
     </div>
   );
