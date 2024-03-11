@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.652774ff.css",
-    "main.js": "/static/js/main.87676b08.js",
-    "static/media/Background2.webp": "/static/media/Background2.1f200b9e5944b5d4d04f.webp",
+    "main.css": "/static/css/main.abba14fb.css",
+    "main.js": "/static/js/main.03ad428d.js",
+    "static/media/Background.webp": "/static/media/Background.e63cd3b55bb6294fb375.webp",
     "static/media/Roca Light Italic.ttf": "/static/media/Roca Light Italic.f403465ee302fcb16dc2.ttf",
     "static/media/Roca Thin.ttf": "/static/media/Roca Thin.c3803263a2355d207869.ttf",
     "static/media/Roca Bold.ttf": "/static/media/Roca Bold.3409c9883262792d522e.ttf",
     "static/media/PortraitPic.jpg": "/static/media/PortraitPic.d71cabe9ee60f6f3d1f2.jpg",
     "index.html": "/index.html",
-    "main.652774ff.css.map": "/static/css/main.652774ff.css.map",
-    "main.87676b08.js.map": "/static/js/main.87676b08.js.map"
+    "main.abba14fb.css.map": "/static/css/main.abba14fb.css.map",
+    "main.03ad428d.js.map": "/static/js/main.03ad428d.js.map"
   },
   "entrypoints": [
-    "static/css/main.652774ff.css",
-    "static/js/main.87676b08.js"
+    "static/css/main.abba14fb.css",
+    "static/js/main.03ad428d.js"
   ]
 }
