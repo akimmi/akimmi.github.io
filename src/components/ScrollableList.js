@@ -1,115 +1,51 @@
 import React from "react";
 import { Text } from "./Util/Text";
 import { VerticalSpaceBetween } from "./Util/VerticalSpaceBetween";
-import LinkedIn from "../images/LinkedInLogo.png";
 
 const ListItem = ({ item }) => {
   return (
     <div
-      style={{ border: "1px solid #ccc", padding: "10px", marginBottom: "5px" }}
+      style={{ padding: "10px", marginBottom: "5px" }}
     >
       <VerticalSpaceBetween>
-        <Text>Intern Position Name</Text>
+        <Text>{item.position}</Text>
         <Text light xs>
-          Date 2023 - Date 2024
+          {item.dateRange}
         </Text>
       </VerticalSpaceBetween>
       <div className="company-logo-name">
-        <img className="experience-company-logo" src={LinkedIn} alt="Hello" />
-        <Text level={1}>Company</Text>
+        <img className="experience-company-logo" src={item.logo} alt="Hello" />
+        <Text level={1}>{item.companyName}</Text>
       </div>
       <ul className="description-list">
-        {item.descriptionList.map((description) => (
-          <li>
-            <Text light>{description}</Text>  
-          </li>
-        ))}
+        {item.descriptionList.map((description) => {
+          if (description[0] === "-") {
+            return (
+              <ul>
+                <li>
+                  <Text light>{description.substring(1)}</Text>
+                </li>
+              </ul>
+            );
+          } else {
+            return (
+              <li>
+                <Text light>{description}</Text>
+              </li>
+            );
+          }
+        })}
       </ul>
     </div>
   );
 };
 
-const ScrollableList = () => {
+const ScrollableList = ({ data }) => {
   // Dummy data for the list
-  const items = [
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    {
-      id: 1,
-      text: "Item 1",
-      descriptionList: [
-        "hello something very very very long that's gonna take a lot of space because of how long the line is. I am trying to see if this line will overflow, and how it will look when it is.",
-        "hello",
-      ],
-    },
-    // Add more items as needed
-  ];
 
   return (
     <div style={{ height: "300px", overflow: "auto" }}>
-      {items.map((item) => (
+      {data.map((item) => (
         <ListItem item={item} />
       ))}
     </div>

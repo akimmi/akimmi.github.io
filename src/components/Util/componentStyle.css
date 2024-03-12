@@ -8,6 +8,11 @@
   src: url("../../fonts/Roca\ Light\ Italic.ttf");
 }
 
+@font-face {
+  font-family: "roca-thin";
+  src: url("../../fonts/Roca\ Thin\ Italic.ttf");
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -30,12 +35,13 @@
   padding: 15px;
   display: grid;
   grid-template-areas: "left right"; /* Equal width for both columns */
-  grid-gap: 10px;
+  grid-gap: 60px;
   text-align: center;
-  grid-template-columns: 1fr 1fr; /* Equal width for both columns */
+  grid-template-columns: 700px 1fr;
+  /* grid-template-columns: 1fr 1fr; */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .grid-container {
     grid-template-areas:
       "left"
@@ -89,4 +95,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.text-blob {
+  display: inline-block;
+  padding: 2px 12px;
+  background-color: rgb(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 15px;
+  margin: 1px 5px 5px 10px;
+}
+
+.text-blob .text {
+  color: white;
+  font-family: "roca-thin";
+}
+
+.text-tabbed {
+  padding-left: 40px;
 }
