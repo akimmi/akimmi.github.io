@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.abba14fb.css",
-    "main.js": "/static/js/main.03ad428d.js",
+    "main.css": "/static/css/main.c013a558.css",
+    "main.js": "/static/js/main.a53846f6.js",
     "static/media/Background.webp": "/static/media/Background.e63cd3b55bb6294fb375.webp",
+    "static/media/Roca Thin Italic.ttf": "/static/media/Roca Thin Italic.53a668328c93ad2708a3.ttf",
     "static/media/Roca Light Italic.ttf": "/static/media/Roca Light Italic.f403465ee302fcb16dc2.ttf",
     "static/media/Roca Thin.ttf": "/static/media/Roca Thin.c3803263a2355d207869.ttf",
     "static/media/Roca Bold.ttf": "/static/media/Roca Bold.3409c9883262792d522e.ttf",
     "static/media/PortraitPic.jpg": "/static/media/PortraitPic.d71cabe9ee60f6f3d1f2.jpg",
+    "static/media/CPALogo.png": "/static/media/CPALogo.b42e5da538c67c3bb788.png",
+    "static/media/TreesLogo.png": "/static/media/TreesLogo.2fdaddea2e60583fd1a5.png",
+    "static/media/CalPolyLogo.png": "/static/media/CalPolyLogo.41a5d13763196e3238f2.png",
+    "static/media/USCLogo.png": "/static/media/USCLogo.3ff063405032a47259bf.png",
     "index.html": "/index.html",
-    "main.abba14fb.css.map": "/static/css/main.abba14fb.css.map",
-    "main.03ad428d.js.map": "/static/js/main.03ad428d.js.map"
+    "main.c013a558.css.map": "/static/css/main.c013a558.css.map",
+    "main.a53846f6.js.map": "/static/js/main.a53846f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.abba14fb.css",
-    "static/js/main.03ad428d.js"
+    "static/css/main.c013a558.css",
+    "static/js/main.a53846f6.js"
   ]
 }
